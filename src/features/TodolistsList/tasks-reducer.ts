@@ -120,7 +120,6 @@ export const removeTaskTC = (taskId: string, todolistId: string) => (dispatch: D
         })
 }
 
-
 // c try-catch
 // export const addTaskTC = (title: string, todolistId: string) => async(dispatch: Dispatch<ActionsType>) => {
 //     dispatch(setStatusAC("loading"))
@@ -201,7 +200,6 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
                     handleServerAppError(res.data, dispatch)
                     dispatch(changeEntityStatusAC(taskId, todolistId, "failed"))
                     //console.log('error-addTask')//заменили дженериковой функцией функционал ниже
-
                 }
                 // if (res.data.messages.length) {
                 //     dispatch(setErrorAC(res.data.messages[0]))
